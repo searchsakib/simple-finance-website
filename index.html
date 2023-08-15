@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Calculation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./login.js" defer></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clif: '#121c32',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-clif">
+    <h1 class="text-5xl text-center mt-40 text-white">
+      Welcome to
+      <span class="font-semibold text-violet-600">Financial Calculation</span>
+    </h1>
+    <section class="mx-auto w-9/12 mt-12 p-20 rounded-md">
+      <h3 class="text-3xl font-semibold mb-6 text-white text-center">
+        Please Login
+      </h3>
+      <input
+        class="bg-white block mb-6 w-3/5 rounded-md mx-auto p-2 focus:outline-violet-600 focus:ring-0 border-none"
+        id="input-email"
+        type="email"
+        placeholder="Your email"
+      />
+      <input
+        class="bg-white block w-3/5 rounded-md mb-6 mx-auto p-2 focus:outline-violet-600 focus:ring-0 border-none"
+        id="input-password"
+        type="password"
+        placeholder="Your password"
+      />
+      <button
+        id="submit-btn"
+        class="text-white rounded-md bg-orange-600 px-8 py-2 mx-auto block hover:bg-yellow-700"
+      >
+        Submit
+      </button>
+    </section>
+  </body>
+</html>
